@@ -29,3 +29,10 @@ jobs:
     - name: Install dependencies
       run: npm install
     - run: npm run build --if-present
+    - name: Archive Release
+      uses: thedoctor0/zip-release@0.7.1
+      with:
+        type: 'zip'
+        filename: 'build.zip'
+        path: 'build'
+        exclusions: '*.git* /*node_modules/* .editorconfig'
