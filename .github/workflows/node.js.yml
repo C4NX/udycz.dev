@@ -34,5 +34,5 @@ jobs:
       with:
         type: 'zip'
         filename: 'build.zip'
-        path: 'build'
+        path: 'dist/'
         exclusions: '*.git* /*node_modules/* .editorconfig'
