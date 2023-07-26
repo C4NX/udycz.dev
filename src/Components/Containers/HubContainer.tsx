@@ -1,13 +1,15 @@
-import { Alert, AlertTitle, Grid, Link, Paper, Stack, Tooltip, Typography } from "@mui/material";
-import { ProjectData } from "../Models/Project";
+import { Alert, AlertTitle, Grid, Link, Paper, Stack, Tooltip, Typography} from "@mui/material";
+import { ProjectData } from "../../Models/Project";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Me } from "../Models/Me";
-import IconElmt from "./IconElmt";
+import { Me } from "../../Models/Me";
+import IconElmt from "../Icons/IconElmt";
 import LinkContainer from "./LinkContainer";
-import HoverZoom from "./HoverZoom";
-import TypewriterEffect from "./TypewriterEffect";
+import HoverZoom from "../Effects/HoverZoom";
+import TypewriterEffect from "../Effects/TypewriterEffect";
 import CodePaper from "./CodePaper";
+import CodePaperMarkdown from "./CodePaperMarkdown";
+import StepsContainer from "./StepsContainer";
 
 /**
  * The props for the HubContainer component
@@ -18,24 +20,26 @@ interface HubContainerProps {
    */
   projects?: ProjectData[];
   /**
-   * The me data
+   * Me data
    */
   me: Me;
   /**
    * Whether the page is still a work in progress
    */
   wip?: boolean;
+  info?: string;
 }
 
 /**
  * A container for the projects
  */
-export default function HubContainer({ projects, me, wip }: HubContainerProps) {
+export default function HubContainer({ projects, me, wip, info }: HubContainerProps) {
   const { t } = useTranslation();
 
   return (
     <Stack
       component={Paper}
+      paddingBottom={0}
       padding={{ xs: 1, sm: 4, md: 6 }}
       spacing={2}
       maxWidth='md'
@@ -63,18 +67,20 @@ export default function HubContainer({ projects, me, wip }: HubContainerProps) {
           This page is still under development, some information or features may be missing.
         </Alert>
       )}
+      {info && (
+        <Alert severity="info">
+          <AlertTitle>Info</AlertTitle>
+          {info}
+        </Alert>
+      )}
       <Typography variant="h4">
         <TypewriterEffect>
           {'>'} {t('hub.aboutme')}
         </TypewriterEffect>
       </Typography>
-      <CodePaper title="about.txt">
-        <Typography textAlign='justify' p={2}>
-          <code>
-            {t('me.description')}
-          </code>
-        </Typography>
-      </CodePaper>
+      <CodePaperMarkdown title="about.txt">
+        {t('me.description')}
+      </CodePaperMarkdown>
       <Typography variant="h4">
         <TypewriterEffect>
           {'>'} {t('hub.links')}
@@ -116,6 +122,14 @@ export default function HubContainer({ projects, me, wip }: HubContainerProps) {
             </HoverZoom>
           ))}
         </Grid>
+      </CodePaper>
+      <Typography variant="h4">
+        <TypewriterEffect writeBar>
+          {'>'} {t('hub.experience')}
+        </TypewriterEffect>
+      </Typography>
+      <CodePaper title="work.steps">
+        <StepsContainer steps={me?.experiences} />
       </CodePaper>
     </Stack>
   );

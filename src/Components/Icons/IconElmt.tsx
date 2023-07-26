@@ -1,6 +1,6 @@
 import { Avatar, Badge } from "@mui/material";
-import { IconTag } from "../Models/IconTag";
-import { IconType, IconTypeEnum } from "../Models/IconType";
+import { IconTag } from "../../Models/IconTag";
+import { IconType, IconTypeEnum } from "../../Models/IconType";
 import BrandIcon from "./BrandIcon";
 
 interface IconElmtProps {

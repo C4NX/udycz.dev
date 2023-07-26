@@ -3,3 +3,31 @@ html, body, #root {
     padding: 0;
     height: 100%;
 }
+
+/* Markdown base alignment and styling */
+.markdown-container {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #424190 #0a0a19;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #0a0a19;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #424190;
+    border-radius: 10px;
+    border: 3px none #ffffff;
+}

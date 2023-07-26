@@ -17,7 +17,7 @@ export default function BackgroundParticles() {
         },
         "particles": {
             "number": {
-                "value": isMobile ? 50 : 150
+                "value": isMobile ? 10 : 150
             }
         },
         "interactivity": {
