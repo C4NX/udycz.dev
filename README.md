@@ -1,3 +1,5 @@
+# New sources are in vue3 : [https://github.com/C4NX/udyczdev-vue](https://github.com/C4NX/udyczdev-vue)
+
 # udycz.dev's source code
 
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
