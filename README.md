@@ -1,75 +1,36 @@
-# Nuxt Minimal Starter
+<div align="center">
+  <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/placeholder-thumbnail-xml.png" alt="placeholder-thumbnail-xml"/>
+  <a href="https://udycz.dev" target="_blank" rel="noopener noreferrer"><h1>udycz.dev</h1></a>
+</div>
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to my portfolio repository! This project is built with [Nuxt.js](https://nuxtjs.org) and hosted on [Vercel](https://vercel.com).
 
-## Setup
+## 🚀 Setup
 
-Make sure to install dependencies:
+Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## 🔧 Development Server
 
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## 🏗️ Production
 
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Locally preview the production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
 pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
