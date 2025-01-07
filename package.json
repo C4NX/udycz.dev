@@ -10,9 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/icon": "1.10.3",
+    "@nuxt/image": "1.8.1",
+    "@nuxtjs/i18n": "9.0.0-rc.2",
+    "@nuxtjs/tailwindcss": "6.12.2",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c",
+  "devDependencies": {
+    "daisyui": "^4.12.22"
+  }
 }
