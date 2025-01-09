@@ -1,6 +1,5 @@
 <template>
-  <div class="flex gap-2 justify-center align-center flex-1 hover:scale-105 transform duration-300">
-    <div class="card image-full flex-1 before:!rounded-lg !rounded-lg shadow-lg">
+    <div class="card image-full hover:scale-105 transform duration-300 before:!rounded-lg !rounded-lg shadow-lg">
       <figure v-if="item.imageSrc">
         <NuxtImg
           :src="item.imageSrc"
@@ -76,7 +75,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script lang="ts" setup>
