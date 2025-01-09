@@ -1,3 +1,6 @@
 <template>
-  <ProjectViewer :items="$portfolio.projects ?? []" :showLimit="4" />
+  <ProjectViewer
+    :items="$portfolio.projects ?? []"
+    :show-limit="4"
+  />
 </template>
