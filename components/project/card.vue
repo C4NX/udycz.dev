@@ -1,80 +1,64 @@
 <template>
-    <div class="card image-full hover:scale-105 transform duration-300 before:!rounded-lg !rounded-lg shadow-lg">
-      <figure v-if="item.imageSrc">
-        <NuxtImg
-          :src="item.imageSrc"
-          :alt="$t(`project.${item.id}.name`)"
-          class="select-none blur-sm"
-        />
-      </figure>
-      <div class="card-body">
-        <h2 class="card-title flex flex-wrap items-center">
-          <span class="flex-1">
-            {{ $t(`project.${item.id}.name`) }}
-          </span>
-          <div
-            v-if="item.status"
-            :class="['badge flex gap-1 text-black dark:text-white', getBadgeColorFromProjectStatus(item.status)]"
-          >
-            <Icon
-              :name="getIconFromProjectStatus(item.status)"
-              size="16"
-            />
-            {{ $t(`project.status.${item.status}`) }}
-          </div>
-        </h2>
-        <p class="text-justify">
-          {{ $t(`project.${item.id}.description`) }}
-        </p>
-        <div class="flex gap-2 flex-wrap">
-          <div
-            v-for="tech in item.tags"
-            :key="tech.name"
-            class="badge badge-outline"
-          >
-            {{ tech.name }}
-          </div>
+  <div class="card bg-base-100 image-full shadow-sm hover:scale-105 transform duration-300 rounded-lg">
+    <figure v-if="item.imageSrc">
+      <NuxtImg
+        :src="item.imageSrc"
+        :alt="$t(`project.${item.id}.name`)"
+        class="select-none"
+      />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title flex flex-wrap items-center">
+        <span class="flex-1">
+          {{ $t(`project.${item.id}.name`) }}
+        </span>
+        <div
+          v-if="item.status"
+          :class="['badge flex gap-1 text-black dark:text-white', getBadgeColorFromProjectStatus(item.status)]"
+        >
+          <Icon
+            :name="getIconFromProjectStatus(item.status)"
+            size="16"
+          />
+          {{ $t(`project.status.${item.status}`) }}
         </div>
-        <div class="card-actions">
-          <div class="flex gap-2 w-full justify-end">
-            <div
-              v-if="item.demoHref"
-              class="tooltip"
-              :data-tip="$t('project.demo')"
-            >
-              <a
-                :href="item.demoHref"
-                class="btn btn-primary text-white bg-opacity-50 rounded-lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Icon
-                  name="line-md:link"
-                  size="24"
-                />
-              </a>
-            </div>
-            <div
-              v-if="item.sourceHref"
-              class="tooltip"
-              :data-tip="$t('project.source')"
-            >
-              <a
-                :href="item.sourceHref"
-                class="btn btn-primary text-white bg-opacity-50 rounded-lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Icon
-                  name="mdi:github"
-                  size="24"
-                />
-              </a>
-            </div>
-          </div>
+      </h2>
+      <p>
+        {{ $t(`project.${item.id}.description`) }}
+      </p>
+      <div class="flex gap-2 flex-wrap">
+        <div
+          v-for="tech in item.tags"
+          :key="tech.name"
+          class="badge badge-outline"
+        >
+          {{ tech.name }}
         </div>
       </div>
+      <div class="card-actions justify-end">
+        <a
+          v-if="item.demoHref"
+          :href="item.demoHref"
+          class="btn btn-primary tooltip"
+          :data-tip="$t('project.demo')"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="line-md:link" size="24" />
+        </a>
+        <a
+          v-if="item.sourceHref"
+          :href="item.sourceHref"
+          class="btn btn-primary tooltip"
+          :data-tip="$t('project.source')"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="mdi:github" size="24" />
+        </a>
+      </div>
     </div>
+  </div>
 </template>
 
 <script lang="ts" setup>

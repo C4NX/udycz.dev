@@ -32,26 +32,3 @@ useHead({
   ],
 })
 </script>
-
-<style>
-/* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #404040 #f5fcff;
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 16px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #f5fcff;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #404040;
-  border-radius: 20px;
-  border: 2px solid #ffffff;
-}
-</style>

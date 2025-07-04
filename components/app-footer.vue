@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer bg-base-200 text-base-content p-10">
+  <footer class="footer md:footer-horizontal bg-base-200 text-base-content p-10">
     <aside>
       <div class="indicator">
         <span

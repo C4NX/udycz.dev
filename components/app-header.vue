@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="navbar fixed z-[100] bg-primary bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+    <div class="navbar fixed z-100 backdrop-blur-md bg-base-100/80">
       <div class="flex-1 flex justify-start items-center gap-1">
         <div class="dropdown sm:hidden">
           <div
@@ -15,7 +15,7 @@
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li
               v-for="link in links"
@@ -45,7 +45,7 @@
       </div>
       <div class="flex-1 flex items-center justify-end">
         <SwitcherTheme />
-        <SwitcherLocale />
+        <I18nSwitcher />
         <NuxtLink
           to="https://github.com/C4NX/udycz.dev"
           class="btn btn-ghost"

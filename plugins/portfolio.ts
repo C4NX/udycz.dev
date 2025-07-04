@@ -96,7 +96,7 @@ const portfolio: Portfolio = {
       tags: [otherTechnologies.nextjs],
       status: ProjectStatus.Completed,
       sourceHref: "https://github.com/Sakusai/Nuit-info",
-      imageSrc: "img/projects/nuit-info-2024/cover.webp",
+      imageSrc: "images/projects/nuit-info-2024/cover.webp",
     },
     {
       id: "portfolio",
