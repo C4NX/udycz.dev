@@ -8,8 +8,14 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
   ],
   plugins: ["~/plugins/portfolio.ts"],
+  i18n: {
+    vueI18n: "./i18n.config.ts",
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
+  },
   ssr: false,
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   router: {
     options: {
       scrollBehaviorType: "smooth",
@@ -30,8 +36,5 @@ export default defineNuxtConfig({
         jsx: false,
       },
     },
-  },
-  i18n: {
-    vueI18n: "./i18n.config.ts",
   },
 })
