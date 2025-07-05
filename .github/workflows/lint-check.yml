@@ -20,4 +20,7 @@ jobs:
         run: bun i
 
       - name: Run Lint
-        run: bun lint:fix
+        run: bun lint
+      
+      - name: Run Typecheck
+        run: bun lint:typecheck
