@@ -80,7 +80,7 @@ const portfolio: Portfolio = {
     },
     {
       name: "Mastodon",
-      href: "https://mastodon.social/@c4nx",
+      href: "https://mastodon.social/@alexudy",
       icon: "mdi:mastodon",
     },
   ],
