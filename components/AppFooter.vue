@@ -18,13 +18,20 @@
           rel="noopener noreferrer"
           target="_blank"
         >NuxtJS</NuxtLink>
-        {{ $t('footer.and') }}
+        ,
         <NuxtLink
           to="https://daisyui.com/"
           class="link"
           rel="noopener noreferrer"
           target="_blank"
-        >DaisyUI.</NuxtLink>
+        >DaisyUI</NuxtLink>
+        {{ $t('footer.and') }}
+        <NuxtLink
+          to="https://dicebear.com/"
+          class="link"
+          rel="noopener noreferrer"
+          target="_blank"
+        >Dicebear.</NuxtLink>
       </p>
       <p>
         © Alexis Udycz (2024{{ currentYear > 2024 ? ` - ${currentYear}` : '' }}). {{ $t('footer.rights') }}

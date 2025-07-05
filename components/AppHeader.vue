@@ -27,12 +27,12 @@
             </li>
           </ul>
         </div>
-        <NuxtLink
+        <NuxtLinkLocale
           class="ml-4 text-lg font-bold hover:scale-110 transform duration-200"
           to="/"
         >
           udycz<span class="text-secondary">.dev</span>
-        </NuxtLink>
+        </NuxtLinkLocale>
         <ul class="menu menu-horizontal px-1 hidden sm:inline-flex gap-1">
           <li
             v-for="link in links"

@@ -6,7 +6,7 @@
       <div class="hero-content text-center flex flex-col gap-5">
         <div class="max-w-md flex flex-col gap-4">
           <NuxtImg
-            src="https://api.dicebear.com/9.x/pixel-art/svg?seed=Alexis%20Udycz"
+            src="/images/avatar.svg"
             alt="Alexis Udycz"
             class="w-40 h-40 mx-auto animate-scale-in mask mask-squircle"
           />

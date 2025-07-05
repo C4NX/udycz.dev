@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center italic text-xl min-h-screen flex items-center justify-center flex-col bg-grid">
+  <main class="text-center italic text-xl min-h-screen flex items-center justify-center flex-col bg-grid">
     <div class="flex flex-col items-center justify-center gap-4">
       <img
         src="https://c.tenor.com/nB_PLcXb3G0AAAAC/tenor.gif"
@@ -17,11 +17,5 @@
         <span>{{ $t('base.underconstruction') }}</span>
       </div>
     </div>
-  </div>
+  </main>
 </template>
-
-<script lang="ts" setup>
-
-</script>
-
-<style></style>

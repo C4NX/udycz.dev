@@ -101,7 +101,8 @@ const toggleTag = (tag: string) => {
 
 // Watch for changes in the items prop and refresh displayed items
 watch(props.items, () => {
-  allTags.value = Array.from(new Set(props.items.flatMap(item => item.tags)))
+  const uniqueTagNames = Array.from(new Set(props.items.flatMap(item => item.tags.map(tag => tag.name))))
+  allTags.value = uniqueTagNames.map(name => props.items.flatMap(item => item.tags).find(tag => tag.name === name)).filter((tag): tag is Tag => tag !== undefined)
   refreshDisplayedItems()
 }, { immediate: true })
 </script>
