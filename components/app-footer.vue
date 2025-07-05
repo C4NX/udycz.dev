@@ -27,7 +27,7 @@
         >DaisyUI.</NuxtLink>
       </p>
       <p>
-        © 2024{{ currentYear ? '' : ` - ${currentYear} ` }} Alexis Udycz. {{ $t('footer.rights') }}
+        © Alexis Udycz (2024{{ currentYear > 2024 ? ` - ${currentYear}` : '' }}). {{ $t('footer.rights') }}
       </p>
     </aside>
     <nav v-if="$portfolio.services">
@@ -53,13 +53,6 @@
         :href="link.href"
         class="link link-hover"
       >{{ link.name }}</a>
-    </nav>
-    <nav>
-      <h6 class="footer-title">
-        {{ $t('footer.legal') }}
-      </h6>
-      <a class="link link-hover">{{ $t('footer.terms') }}</a>
-      <a class="link link-hover">{{ $t('footer.privacy') }}</a>
     </nav>
   </footer>
 </template>

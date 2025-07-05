@@ -12,7 +12,7 @@ const technologies = {
     href: "https://flask.palletsprojects.com/",
   },
   angular: {
-    name: "Angular 17",
+    name: "Angular 18",
     icon: "devicon:angular",
     href: "https://angular.dev/",
   },
@@ -96,53 +96,43 @@ const portfolio: Portfolio = {
       tags: [otherTechnologies.nextjs],
       status: ProjectStatus.Completed,
       sourceHref: "https://github.com/Sakusai/Nuit-info",
-      imageSrc: "images/projects/nuit-info-2024/cover.webp",
+      imageSrc: "/images/projects/nuit-info-2024/cover.webp",
     },
     {
       id: "portfolio",
       tags: [technologies.nuxtjs, technologies.tailwind],
       status: ProjectStatus.InProgress,
       sourceHref: "https://github.com/C4NX/udycz.dev",
-      // imageSrc: 'https://placehold.co/600x400',
       demoHref: "https://udycz.dev",
     },
     {
       id: "cartoon-fantasy",
       tags: [technologies.symfony],
       status: ProjectStatus.InProgress,
-      // imageSrc: 'https://placehold.co/600x400',
       demoHref: "https://cartoon-fantasy.net",
     },
     {
       id: "takeavet",
       tags: [technologies.symfony],
       status: ProjectStatus.Completed,
-      sourceHref: "https://github.com/C4NX/udycz.dev",
-      // imageSrc: 'https://placehold.co/600x400',
+      sourceHref: "https://github.com/C4NX/takeavet-react",
+      imageSrc: "/images/projects/takeavet/cover.png",
+    },
+    {
+      id: "assoplus",
+      tags: [technologies.nuxtjs, technologies.postgresql],
+      status: ProjectStatus.InProgress,
+      imageSrc: "/images/projects/assoplus/cover.webp",
     },
     {
       id: "homelab",
       tags: [technologies.docker, otherTechnologies.proxmox],
       status: ProjectStatus.InProgress,
       sourceHref: "https://github.com/C4NX/udycz.dev",
-      // imageSrc: 'https://placehold.co/600x400',
+      imageSrc: "/images/projects/homelab/cover.png",
     },
   ],
 }
-
-// for (let i = 0; i < 15; i++) {
-//     portfolio.projects?.push(
-//         ((i: number): Project => ({
-//             id: 'nuxt-portfolio-' + i,
-//             isFeatured: true,
-//             imageSrc: 'https://placehold.co/600x400',
-//             tags: Object.values(technologies),
-//             sourceHref: 'https://github.com/udycz/nuxt-portfolio',
-//             demoHref: 'https://udycz.dev',
-//             status: ProjectStatus.InProgress,
-//         }))(i)
-//     )
-// }
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.provide("portfolio", portfolio)

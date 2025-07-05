@@ -7,7 +7,7 @@
       <button
         v-for="tag in allTags"
         :key="tag.name"
-        :class="{ 'badge badge-outline badge-lg flex gap-2 items-center justify-center transition duration-200': true, 'badge-primary': selectedTags.includes(tag.name), 'badge-secondary': !selectedTags.includes(tag.name) }"
+        :class="{ 'badge badge-outline badge-lg flex gap-2 items-center justify-center transition duration-200 cursor-pointer': true, 'badge-primary': selectedTags.includes(tag.name), 'badge-secondary': !selectedTags.includes(tag.name) }"
         @click="toggleTag(tag.name)"
       >
         <Icon :name="tag.icon" />
@@ -39,7 +39,7 @@
       to="/projects"
       class="link group relative flex items-center justify-center font-bold no-underline text-xl"
     >
-      {{ $t('seemoreCount', { count: undisplayedCount }) }}
+      {{ $t('base.seemoreCount', { count: undisplayedCount }) }}
       <Icon
         name="mdi:arrow-right"
         size="24"
@@ -73,10 +73,6 @@ const props = defineProps<{
 
 // Count of items that are not displayed
 const undisplayedCount = computed(() => props.items.length - displayedItems.value.length)
-
-watch(undisplayedCount, () => {
-  console.log("Undisplayed count:", undisplayedCount.value)
-})
 
 /**
  * Refreshes the displayed items based on the selected tags and other props

@@ -1,6 +1,7 @@
 {
-    "name": "Alexis Udycz",
-    "short_name": "Alexis Udycz",
+    "name": "udycz.dev",
+    "short_name": "udycz.dev",
+    "description": "Personal website of Alexis Udycz, a full-stack developer and student.",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

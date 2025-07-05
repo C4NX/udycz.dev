@@ -21,7 +21,9 @@
               v-for="link in links"
               :key="link.nameI18n"
             >
-              <NuxtLink :to="link.href">{{ $t(link.nameI18n) }}</NuxtLink>
+              <NuxtLinkLocale :to="link.href">
+                {{ $t(link.nameI18n) }}
+              </NuxtLinkLocale>
             </li>
           </ul>
         </div>
@@ -36,10 +38,12 @@
             v-for="link in links"
             :key="link.nameI18n"
           >
-            <NuxtLink
+            <NuxtLinkLocale
               :to="link.href"
               class="hover:underline"
-            >{{ $t(link.nameI18n) }}</NuxtLink>
+            >
+              {{ $t(link.nameI18n) }}
+            </NuxtLinkLocale>
           </li>
         </ul>
       </div>

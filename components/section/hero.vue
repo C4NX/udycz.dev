@@ -40,7 +40,7 @@
               to="#about"
               class="link group relative flex items-center justify-center font-bold no-underline text-neutral-800 dark:text-neutral-200"
             >
-              {{ $t('seemore') }}
+              {{ $t('base.seemore') }}
               <Icon
                 name="mdi:arrow-right"
                 size="24"
