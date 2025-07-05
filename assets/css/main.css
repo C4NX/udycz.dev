@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: corporate --default, business --prefersdark;
+  logs: true;
+}
+
+@custom-variant dark (&:where([data-theme=business], [data-theme=business] *));
+
+@theme {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  --animate-fade-in: fade-in 1s ease-in-out;
+  --animate-scale-in: scale-in 1s ease-in-out;
+}
+
+.bg-grid {
+  @apply 
+    bg-[linear-gradient(90deg,#8080801a_1px,transparent_0),linear-gradient(180deg,#8080801a_1px,transparent_0)]
+    bg-size-[24px_24px];
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #404040 #f5fcff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f5fcff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #404040;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+}
