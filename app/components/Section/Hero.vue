@@ -5,10 +5,10 @@
     <div class="hero">
       <div class="hero-content text-center flex flex-col gap-5">
         <div class="max-w-md flex flex-col gap-4">
-          <NuxtImg
-            src="/images/avatar.svg"
+          <img
+            src="/images/avatar.png"
             alt="Alexis Udycz"
-            class="w-40 h-40 mx-auto animate-scale-in mask mask-squircle"
+            class="w-40 h-40 mx-auto animate-scale-in mask mask-squircle select-none"
           />
           <p class="text-6xl font-extrabold hover:scale-110 transform duration-200 cursor-default select-none">
             {{ $portfolio.firstName }} {{ $portfolio.lastName }}
