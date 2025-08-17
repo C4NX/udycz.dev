@@ -32,7 +32,7 @@
     >
       <Icon
         name="mdi:translate"
-        class="h-4 w-4"
+        size="18"
       />
       <Icon
         name="mdi:chevron-down"

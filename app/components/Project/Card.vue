@@ -7,7 +7,7 @@
       <img
         :src="item.imageSrc"
         :alt="$t(`project.${item.id}.name`)"
-        class="object-cover w-full h-full transform hover:scale-105 transition-transform duration-500"
+        class="object-cover w-full h-full transform hover:scale-105 transition-transform duration-500 select-none"
         loading="lazy"
       >
     </figure>

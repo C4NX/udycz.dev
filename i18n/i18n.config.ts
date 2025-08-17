@@ -5,8 +5,8 @@ export default defineI18nConfig(() => ({
     fr: {
       localeName: "Français",
       base: {
-        seemore: "En voir plus",
-        seemoreCount: "{count} en plus...",
+        seemore: "En savoir plus",
+        seemoreCount: "{count} projets en plus...",
         underconstruction: "Cette page est en construction. Revenez plus tard s'il vous plaît.",
       },
       header: {
@@ -16,7 +16,7 @@ export default defineI18nConfig(() => ({
         language_select: "Sélectionner la langue",
       },
       hero: {
-        title: "Étudiant / Développeur full-stack de {age} ans, et aspirant ingénieur logiciel.",
+        title: "Étudiant & développeur full-stack de {age} ans, actuellement en formation d'ingénieur systèmes d'information.",
       },
       tech: {
         title: "Compétences techniques",
@@ -48,9 +48,9 @@ export default defineI18nConfig(() => ({
           name: "Mon Homelab",
           description: "Un projet personnel pour héberger mes services et applications sur mon propre serveur.",
         },
-        "portfolio": {
+        "portfolio-2025": {
           name: "Mon Portfolio (2025)",
-          description: "Le site web que vous êtes en train de visiter, construit avec Nuxt.js 3 et DaisyUI 5.",
+          description: "Le site web que vous êtes en train de visiter, construit avec Nuxt.js 4 et DaisyUI 5.",
         },
         "cartoon-fantasy": {
           name: "Cartoon Fantasy (2023-2025)",
@@ -83,7 +83,7 @@ export default defineI18nConfig(() => ({
         language_select: "Select Language",
       },
       hero: {
-        title: "Student / Full-Stack Developer aged {age}, aspiring software engineer.",
+        title: "Student & full-stack developer of {age} years old, currently learning to be an information systems engineer.",
       },
       tech: {
         title: "Technical Skills",
@@ -99,8 +99,8 @@ export default defineI18nConfig(() => ({
           completed: "Completed",
           planned: "Planned",
         },
-        "demo": "View this project's demo",
-        "source": "View this project's source code",
+        "demo": "Check the demo !",
+        "source": "Check the sources !",
         "tags": "Tags",
         "empty": "No projects available at the moment",
         "assoplus": {
@@ -115,9 +115,9 @@ export default defineI18nConfig(() => ({
           name: "My Homelab",
           description: "A personal project to host my services and applications on my own server.",
         },
-        "portfolio": {
+        "portfolio-2025": {
           name: "My Portfolio (2025)",
-          description: "The website you're currently visiting, built with Nuxt.js 3 and DaisyUI 5.",
+          description: "The website you're currently visiting, built with Nuxt.js 4 and DaisyUI 5.",
         },
         "cartoon-fantasy": {
           name: "Cartoon Fantasy (2023-2025)",

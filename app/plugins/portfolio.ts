@@ -29,7 +29,7 @@ const technologies = {
   supabase: {
     name: "Supabase",
     icon: "skill-icons:supabase-light",
-    href: "https://supabase.io/",
+    href: "https://supabase.com/",
   },
   postgresql: {
     name: "PostgreSQL",
@@ -79,6 +79,11 @@ const portfolio: Portfolio = {
       icon: "mdi:linkedin",
     },
     {
+      name: "Github",
+      href: "https://github.com/C4NX",
+      icon: "mdi:github",
+    },
+    {
       name: "Mastodon",
       href: "https://mastodon.social/@alexudy",
       icon: "mdi:mastodon",
@@ -96,12 +101,13 @@ const portfolio: Portfolio = {
       tags: [otherTechnologies.nextjs],
       status: ProjectStatus.Completed,
       sourceHref: "https://github.com/Sakusai/Nuit-info",
-      imageSrc: "/images/projects/nuit-info-2024/cover.webp",
+      imageSrc: "/images/projects/nuit-info-2024/cover.jpg",
     },
     {
-      id: "portfolio",
+      id: "portfolio-2025",
       tags: [technologies.nuxtjs, technologies.tailwind],
       status: ProjectStatus.InProgress,
+      imageSrc: "/images/projects/portfolio-2025/cover.png",
       sourceHref: "https://github.com/C4NX/udycz.dev",
       demoHref: "https://udycz.dev",
     },
