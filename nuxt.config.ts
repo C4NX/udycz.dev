@@ -45,7 +45,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      appVersion: "1.1.0",
+      appVersion: "1.2.0",
     },
   },
   compatibilityDate: "2024-11-01",

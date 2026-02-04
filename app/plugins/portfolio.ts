@@ -29,7 +29,7 @@ const technologies = {
   supabase: {
     name: "Supabase",
     icon: "skill-icons:supabase-light",
-    href: "https://supabase.io/",
+    href: "https://supabase.com/",
   },
   postgresql: {
     name: "PostgreSQL",
@@ -51,6 +51,11 @@ const technologies = {
     icon: "skill-icons:docker",
     href: "https://www.docker.com/",
   },
+  kotlin: {
+    name: "Kotlin",
+    icon: "skill-icons:kotlin-light",
+    href: "https://kotlinlang.org/",
+  }
 }
 
 const otherTechnologies = {
@@ -64,6 +69,11 @@ const otherTechnologies = {
     icon: "simple-icons:proxmox",
     href: "https://proxmox.com/",
   },
+  devops: {
+    name: "DevOps",
+    icon: "mdi:server",
+    href: "https://en.wikipedia.org/wiki/DevOps",
+  }
 }
 
 const portfolio: Portfolio = {
@@ -77,6 +87,11 @@ const portfolio: Portfolio = {
       name: "LinkedIn",
       href: "https://www.linkedin.com/in/alexis-udycz/",
       icon: "mdi:linkedin",
+    },
+    {
+      name: "Github",
+      href: "https://github.com/C4NX",
+      icon: "mdi:github",
     },
     {
       name: "Mastodon",
@@ -96,19 +111,21 @@ const portfolio: Portfolio = {
       tags: [otherTechnologies.nextjs],
       status: ProjectStatus.Completed,
       sourceHref: "https://github.com/Sakusai/Nuit-info",
-      imageSrc: "/images/projects/nuit-info-2024/cover.webp",
+      imageSrc: "/images/projects/nuit-info-2024/cover.jpg",
     },
     {
-      id: "portfolio",
+      id: "portfolio-2025",
       tags: [technologies.nuxtjs, technologies.tailwind],
       status: ProjectStatus.InProgress,
+      imageSrc: "/images/projects/portfolio-2025/cover.png",
       sourceHref: "https://github.com/C4NX/udycz.dev",
       demoHref: "https://udycz.dev",
     },
     {
       id: "cartoon-fantasy",
-      tags: [technologies.symfony],
+      tags: [technologies.symfony, otherTechnologies.devops],
       status: ProjectStatus.InProgress,
+      imageSrc: "https://b2.cartoon-fantasy.net/file/S3-CDN/images/loop_logo_astrae.gif",
       demoHref: "https://cartoon-fantasy.net",
     },
     {
@@ -121,16 +138,23 @@ const portfolio: Portfolio = {
     {
       id: "assoplus",
       tags: [technologies.nuxtjs, technologies.postgresql],
-      status: ProjectStatus.InProgress,
+      status: ProjectStatus.Completed,
       imageSrc: "/images/projects/assoplus/cover.webp",
+      sourceHref: "https://github.com/C4NX/Assoplus",
     },
     {
       id: "homelab",
-      tags: [technologies.docker, otherTechnologies.proxmox],
+      tags: [technologies.docker, otherTechnologies.proxmox, otherTechnologies.devops],
       status: ProjectStatus.InProgress,
-      sourceHref: "https://github.com/C4NX/udycz.dev",
       imageSrc: "/images/projects/homelab/cover.png",
     },
+    {
+      id: "cliche-android",
+      tags: [technologies.kotlin, technologies.supabase],
+      status: ProjectStatus.Completed,
+      sourceHref: "https://github.com/C4NX/cliche",
+      imageSrc: "/images/projects/cliche-android/cover.png",
+    }
   ],
 }
 

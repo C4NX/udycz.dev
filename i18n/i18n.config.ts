@@ -5,8 +5,8 @@ export default defineI18nConfig(() => ({
     fr: {
       localeName: "Français",
       base: {
-        seemore: "En voir plus",
-        seemoreCount: "{count} en plus...",
+        seemore: "En savoir plus",
+        seemoreCount: "{count} projets en plus...",
         underconstruction: "Cette page est en construction. Revenez plus tard s'il vous plaît.",
       },
       header: {
@@ -16,7 +16,7 @@ export default defineI18nConfig(() => ({
         language_select: "Sélectionner la langue",
       },
       hero: {
-        title: "Étudiant / Développeur full-stack de {age} ans, et aspirant ingénieur logiciel.",
+        title: "Étudiant & développeur full-stack de {age} ans, actuellement en formation d'ingénieur systèmes d'information.",
       },
       tech: {
         title: "Compétences techniques",
@@ -48,17 +48,21 @@ export default defineI18nConfig(() => ({
           name: "Mon Homelab",
           description: "Un projet personnel pour héberger mes services et applications sur mon propre serveur.",
         },
-        "portfolio": {
+        "portfolio-2025": {
           name: "Mon Portfolio (2025)",
-          description: "Le site web que vous êtes en train de visiter, construit avec Nuxt.js 3 et DaisyUI 5.",
+          description: "Le site web que vous êtes en train de visiter, construit avec Nuxt.js 4 et DaisyUI 5.",
         },
         "cartoon-fantasy": {
-          name: "Cartoon Fantasy (2023-2025)",
-          description: "Cartoon Fantasy est un des projets de l'association Realms of Fantasy. J'ai travaillé sur ce projet plus d'un an en tant que développeur full-stack.",
+          name: "Cartoon Fantasy (2023 - Aujourd'hui)",
+          description: "Cartoon Fantasy est un des projets de l'association Realms of Fantasy. Je travaille dessus depuis plus d'un an en tant que développeur full-stack.",
         },
         "nuit-info-2024": {
           name: "Nuit de l'informatique (2024)",
           description: "Participation à la Nuit de l'informatique 2024, un événement qui consiste à développer un projet en une nuit, avec différents thèmes, contraintes et défis.",
+        },
+        "cliche-android": {
+          name: "Cliché (2025)",
+          description: "Une application Android \"instagram-like\" pour partager des photos et interagir avec une communauté. Réalisée dans le cadre du CNAM.",
         },
       },
       footer: {
@@ -83,7 +87,7 @@ export default defineI18nConfig(() => ({
         language_select: "Select Language",
       },
       hero: {
-        title: "Student / Full-Stack Developer aged {age}, aspiring software engineer.",
+        title: "Student & full-stack developer of {age} years old, currently learning to be an information systems engineer.",
       },
       tech: {
         title: "Technical Skills",
@@ -99,8 +103,8 @@ export default defineI18nConfig(() => ({
           completed: "Completed",
           planned: "Planned",
         },
-        "demo": "View this project's demo",
-        "source": "View this project's source code",
+        "demo": "Check the demo !",
+        "source": "Check the sources !",
         "tags": "Tags",
         "empty": "No projects available at the moment",
         "assoplus": {
@@ -115,17 +119,21 @@ export default defineI18nConfig(() => ({
           name: "My Homelab",
           description: "A personal project to host my services and applications on my own server.",
         },
-        "portfolio": {
+        "portfolio-2025": {
           name: "My Portfolio (2025)",
-          description: "The website you're currently visiting, built with Nuxt.js 3 and DaisyUI 5.",
+          description: "The website you're currently visiting, built with Nuxt.js 4 and DaisyUI 5.",
         },
         "cartoon-fantasy": {
-          name: "Cartoon Fantasy (2023-2025)",
+          name: "Cartoon Fantasy (2023 - Present)",
           description: "Cartoon Fantasy is one of Realms of Fantasy association’s projects. I worked on it for over a year as a full-stack developer.",
         },
         "nuit-info-2024": {
           name: "La Nuit de l'Informatique (2024)",
           description: "Participated in La Nuit de l'Informatique 2024, an event where participants develop a project in just one night, with various themes, constraints, and challenges.",
+        },
+        "cliche-android": {
+          name: "Cliché (2025)",
+          description: "An Instagram-like Android application to share photos and interact with a community. Developed as part of CNAM.",
         },
       },
       footer: {

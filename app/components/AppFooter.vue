@@ -24,14 +24,7 @@
           class="link"
           rel="noopener noreferrer"
           target="_blank"
-        >DaisyUI</NuxtLink>
-        {{ $t('footer.and') }}
-        <NuxtLink
-          to="https://dicebear.com/"
-          class="link"
-          rel="noopener noreferrer"
-          target="_blank"
-        >Dicebear.</NuxtLink>
+        >DaisyUI</NuxtLink>.
       </p>
       <p>
         © Alexis Udycz (2024{{ currentYear > 2024 ? ` - ${currentYear}` : '' }}). {{ $t('footer.rights') }}
