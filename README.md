@@ -9,7 +9,7 @@ Welcome to my portfolio repository! This project is built with [Nuxt 4](https://
 Make sure to install the dependencies:
 
 ```bash
-bun i
+pnpm i
 ```
 
 ## 🔧 Development Server
@@ -17,7 +17,7 @@ bun i
 Start the development server on `http://localhost:3000`:
 
 ```bash
-bun dev
+pnpm dev
 ```
 
 ## 🏗️ Production
@@ -25,5 +25,5 @@ bun dev
 Build the application for production:
 
 ```bash
-bun run build # (preview with `bun preview`)
+pnpm build # (preview with `pnpm preview`)
 ```

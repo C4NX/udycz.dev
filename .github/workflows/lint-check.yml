@@ -17,10 +17,10 @@ jobs:
         uses: oven-sh/setup-bun@v2
 
       - name: Install Dependencies
-        run: bun i
+        run: pnpm i
 
       - name: Run Lint
-        run: bun lint
-      
+        run: pnpm lint
+
       - name: Run Typecheck
-        run: bun lint:typecheck
+        run: pnpm lint:typecheck
