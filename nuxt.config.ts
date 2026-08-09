@@ -45,10 +45,10 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      appVersion: "1.2.0",
+      appVersion: "1.2.1",
     },
   },
-  compatibilityDate: "2024-11-01",
+  compatibilityDate: "2026-08-09",
   eslint: {
     config: {
       stylistic: {
