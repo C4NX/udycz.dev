@@ -111,7 +111,7 @@ const portfolio: Portfolio = {
       tags: [otherTechnologies.nextjs],
       status: ProjectStatus.Completed,
       sourceHref: "https://github.com/Sakusai/Nuit-info",
-      imageSrc: "/images/projects/nuit-info-2024/cover.jpg",
+      imageSrc: "/images/projects/nuit-info-2024/cover.png",
     },
     {
       id: "portfolio-2025",
